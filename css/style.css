@@ -20,4 +20,16 @@ span {
   span:nth-child(1) {
     top: 0;
     left: 0;
-    background-color: #fceba7; }
+    background-color: #f9fd01; }
+  span:nth-child(2) {
+    top: 0;
+    right: 0;
+    background-color: #a6f578; }
+  span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    background-color: #05c7ce; }
+  span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    background-color: #fd4646; }
