@@ -11,14 +11,17 @@ body {
 .container {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: transparent;
   position: relative;
+  animation: animate 4s linear infinite;
+  
 }
 
 span {
   position: absolute;
   width: 50px;
   height: 50px;
+  animation: rotate 4s infinite;
 
   &:nth-child(1) {
     top: 0;
@@ -43,4 +46,71 @@ span {
     right: 0;
     background-color: #fd4646;
   }
+}
+
+@keyframes rotate {
+
+  0% {
+  transform: rotate(0deg);
+}
+
+  10% {
+  transform: rotate(0deg);
+}
+
+ 
+  50% {
+ 
+  transform: rotate(90deg);
+}
+
+  90% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+  
+}
+
+
+
+@keyframes animate {
+
+  0% {
+  width: 100px;
+  height: 100px;
+}
+
+  10% {
+  width: 100px;
+  height: 100px;
+}
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+  width: 150px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  90% {
+  width: 100px;
+  height: 100px;
+}
+
+  100% {
+  width: 100px;
+  height: 100px;
+  transform: rotate(360deg);
+  
+}
 }
