@@ -1,8 +1,23 @@
-.button {
-  height: 90px;
-  width: 290px;
-  font-size: 28px;
-  color: white;
-  border: none;
-  background-color: blue;
-  border-radius: 15px; }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #272727;
+  box-sizing: border-box; }
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative; }
+
+span {
+  position: absolute;
+  width: 50px;
+  height: 50px; }
+  span:nth-child(1) {
+    top: 0;
+    left: 0;
+    background-color: #fceba7; }
