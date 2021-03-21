@@ -7,6 +7,38 @@ body {
   background-color: #272727;
   box-sizing: border-box; }
 
+@keyframes out-in-negative {
+  0% {
+    transform: translateX(0px) rotate(0deg); }
+  50% {
+    transform: translateX(-50px) rotate(45deg); }
+  100% {
+    transform: translateX(0) rotate(90deg); } }
+
+@keyframes out-in-y-negative {
+  0% {
+    transform: translateX(0px) rotate(0deg); }
+  50% {
+    transform: translateY(-50px) rotate(45deg); }
+  100% {
+    transform: translateX(0) rotate(90deg); } }
+
+@keyframes out-in-y {
+  0% {
+    transform: translateX(0px) rotate(0deg); }
+  50% {
+    transform: translateY(50px) rotate(45deg); }
+  100% {
+    transform: translateX(0) rotate(90deg); } }
+
+@keyframes out-in {
+  0% {
+    transform: translateX(0px) rotate(0deg); }
+  50% {
+    transform: translateX(50px) rotate(45deg); }
+  100% {
+    transform: translateX(0) rotate(90deg); } }
+
 .container {
   width: 100px;
   height: 100px;
@@ -17,56 +49,40 @@ body {
 span {
   position: absolute;
   width: 50px;
-  height: 50px;
-  animation: rotate 4s infinite; }
+  height: 50px; }
   span:nth-child(1) {
     top: 0;
     left: 0;
-    background-color: #f9fd01; }
+    background-color: #f9fd01;
+    animation: out-in-negative 4s infinite; }
   span:nth-child(2) {
     top: 0;
     right: 0;
-    background-color: #a6f578; }
+    background-color: #a6f578;
+    animation: out-in-y-negative 4s infinite; }
   span:nth-child(3) {
     bottom: 0;
     left: 0;
-    background-color: #05c7ce; }
+    background-color: #05c7ce;
+    animation: out-in-y 4s infinite; }
   span:nth-child(4) {
     bottom: 0;
     right: 0;
-    background-color: #fd4646; }
+    background-color: #fd4646;
+    animation: out-in 4s infinite; }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg); }
-  10% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(90deg); }
-  90% {
-    transform: rotate(90deg); }
   100% {
     transform: rotate(90deg); } }
 
 @keyframes animate {
-  0% {
-    width: 100px;
-    height: 100px; }
-  10% {
-    width: 100px;
-    height: 100px; }
   25% {
     transform: rotate(90deg); }
   50% {
-    width: 150px;
-    height: 150px;
     transform: rotate(180deg); }
   75% {
     transform: rotate(270deg); }
-  90% {
-    width: 100px;
-    height: 100px; }
   100% {
-    width: 100px;
-    height: 100px;
     transform: rotate(360deg); } }
