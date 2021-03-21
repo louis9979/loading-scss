@@ -20,25 +20,25 @@ body {
       transform: translateX(0px) rotate(0deg);
     }
     50% {
-      transform: $transformProperty rotate(45deg);
+      transform: $transformProperty rotate(90deg);
     }
     100% {
-      transform: translateX(0) rotate(90deg);
+      transform: translateX(0) rotate(360deg);
     }
   }
 }
 
-@include cube-animation(out-in-negative, -50px);
-@include cube-animation(out-in-y-negative, -50px, true);
-@include cube-animation(out-in-y, 50px, true);
-@include cube-animation(out-in, 50px);
+@include cube-animation(out-in-negative, -30px);
+@include cube-animation(out-in-y-negative, -30px, true);
+@include cube-animation(out-in-y, 30px, true);
+@include cube-animation(out-in, 30px);
 
 .container {
   width: 100px;
   height: 100px;
   background-color: transparent;
   position: relative;
-  animation: animate 4s linear infinite;
+  animation: animate 8s linear infinite;
   
 }
 
@@ -51,28 +51,28 @@ span {
     top: 0;
     left: 0;
     background-color: #f9fd01;
-    animation: out-in-negative 4s infinite;
+    animation: out-in-negative 2s infinite;
   }
 
   &:nth-child(2) {
     top: 0;
     right: 0;
     background-color: #a6f578;
-    animation: out-in-y-negative 4s infinite;
+    animation: out-in-y-negative 2s infinite;
   }
 
   &:nth-child(3) {
     bottom: 0;
     left: 0;
     background-color: #05c7ce;
-    animation: out-in-y 4s infinite;
+    animation: out-in-y 2s infinite;
   }
 
   &:nth-child(4) {
     bottom: 0;
     right: 0;
     background-color: #fd4646;
-    animation: out-in 4s infinite;
+    animation: out-in 2s infinite;
     }
   }
 
