@@ -11,7 +11,7 @@ body {
   0% {
     transform: translateX(0px) rotate(0deg); }
   50% {
-    transform: translateX(-30px) rotate(90deg); }
+    transform: translateX(-60px) rotate(90deg); }
   100% {
     transform: translateX(0) rotate(360deg); } }
 
@@ -19,7 +19,7 @@ body {
   0% {
     transform: translateX(0px) rotate(0deg); }
   50% {
-    transform: translateY(-30px) rotate(90deg); }
+    transform: translateY(-60px) rotate(90deg); }
   100% {
     transform: translateX(0) rotate(360deg); } }
 
@@ -27,7 +27,7 @@ body {
   0% {
     transform: translateX(0px) rotate(0deg); }
   50% {
-    transform: translateY(30px) rotate(90deg); }
+    transform: translateY(60px) rotate(90deg); }
   100% {
     transform: translateX(0) rotate(360deg); } }
 
@@ -35,7 +35,7 @@ body {
   0% {
     transform: translateX(0px) rotate(0deg); }
   50% {
-    transform: translateX(30px) rotate(90deg); }
+    transform: translateX(60px) rotate(90deg); }
   100% {
     transform: translateX(0) rotate(360deg); } }
 
